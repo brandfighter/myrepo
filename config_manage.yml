@@ -1,7 +1,7 @@
 - name: latest version of all required packages installed
   hosts: all
   become: yes
-  remote_user: "chaitali"
+  remote_user: "akshay"
   tasks:
 
     - name: install redis on Debian based distros
