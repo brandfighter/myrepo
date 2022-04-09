@@ -1,0 +1,46 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('run ansible playbook') {
+            steps {
+                script {
+                try {
+                    script {
+                            sh """echo [master] > hosts  """
+                            sh """echo localhost >> hosts"""
+                            sh """echo [nodes] >> hosts  """
+                            sh """echo ${node1_ip} >> hosts"""
+                            sh """echo ${node2_ip} >> hosts"""
+                            sh """echo [all:vars] >> hosts"""
+                            sh """echo ansible_connection=ssh >> hosts""" 
+                            sh """echo ansible_user=${username} >> hosts""" 
+                            sh """echo ansible_ssh_pass=${ssh_password} >> hosts""" 
+                            sh """cat hosts"""
+                            sh """echo [defaults] > ansible.cfg  """
+                            sh """echo timeout = 60 >> ansible.cfg"""
+                            sh """echo host_key_checking = false >> ansible.cfg"""
+                            sh """echo inventory = ./hosts >> ansible.cfg"""
+                            sh """echo remote_user = ${username} >> ansible.cfg"""
+                            sh """echo ask_pass = false  >> ansible.cfg"""
+                            sh """echo [privilege_escalation] >> ansible.cfg""" 
+                            sh """echo become_method = sudo >> ansible.cfg""" 
+                            sh """echo become = true >> ansible.cfg""" 
+                            sh """echo become_user = root >> ansible.cfg""" 
+                            sh """echo become_ask_pass = false >> ansible.cfg""" 
+                            sh """cat ansible.cfg""" 
+                            sh """ansible-playbook -i hosts uninstall_config.yml --extra-vars "ansible_sudo_pass=${ssh_password}" """
+
+                    }
+                }
+                catch(e) {
+                    sh """echo " === config manage failed ===" """
+                    build_ok = false
+                    echo e
+                }
+            }
+            }
+        }
+    }
+
+}
