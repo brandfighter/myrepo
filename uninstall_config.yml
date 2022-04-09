@@ -12,7 +12,7 @@
       notify: remove apache2
       when: ansible_os_family == 'Debian'
 
-    - name: install httpd on RHEL based distros
+    - name: uninstall httpd on RHEL based distros
       yum:
         name: "{{ item }}"
         state: absent
@@ -24,13 +24,13 @@
       when: ansible_os_family == 'RedHat'
 
   handlers:
-    - name: start httpd
+    - name: remove httpd
       service:
         name: httpd
         state: removed
         enabled: true
       ignore_errors: yes
-    - name: start apache2
+    - name: remove apache2
       service:
         name: apache2
         state: removed
