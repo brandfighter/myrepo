@@ -8,6 +8,7 @@
       apt:
         name: apache2
         state: absent
+        purge: yes
       become: true
       notify: remove apache2
       when: ansible_os_family == 'Debian'
