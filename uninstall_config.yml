@@ -1,0 +1,38 @@
+- name: latest version of all required packages installed
+  hosts: all
+  become: yes
+  remote_user: "akshay"
+  tasks:
+
+    - name: uninstall apache2 on Debian based distros
+      apt:
+        name: apache2
+        state: absent
+      become: true
+      notify: remove apache2
+      when: ansible_os_family == 'Debian'
+
+    - name: install httpd on RHEL based distros
+      yum:
+        name: "{{ item }}"
+        state: absent
+        update_cache: true
+      become: true
+      loop:
+        - httpd
+      notify: remove httpd
+      when: ansible_os_family == 'RedHat'
+
+  handlers:
+    - name: start httpd
+      service:
+        name: httpd
+        state: removed
+        enabled: true
+      ignore_errors: yes
+    - name: start apache2
+      service:
+        name: apache2
+        state: removed
+        enabled: true
+      ignore_errors: yes
