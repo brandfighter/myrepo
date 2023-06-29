@@ -1,11 +1,53 @@
-<mxfile host="app.diagrams.net" modified="2023-06-29T10:44:54.031Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.58" etag="T-YjsUlQ3a27SNBaPj22" version="21.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-29T12:01:49.764Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.58" etag="zAZR3p3eWK8B88fCbILf" version="21.5.2" type="github">
   <diagram name="Page-1" id="TYEY5Xl-pdU0jA0OsoXZ">
-    <mxGraphModel dx="709" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="709" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="I8i-qTSy3NzaDd4TFS07-1" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Virtual_Machine.svg;" vertex="1" parent="1">
-          <mxGeometry x="110" y="360" width="129.38" height="120" as="geometry" />
+        <mxCell id="I8i-qTSy3NzaDd4TFS07-14" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;arcSize=8;dashed=1;dashPattern=12 12;strokeColor=#80d204;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="275" y="210" width="380" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="I8i-qTSy3NzaDd4TFS07-2" value="System sending IPv6 messages" style="fontColor=#000000;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.pc;fontSize=11;fontStyle=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="400" width="114.28" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="I8i-qTSy3NzaDd4TFS07-3" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/whcompare-isometric-web-hosting-servers/50/laptop-with-code-128.png" vertex="1" parent="1">
+          <mxGeometry x="270" y="220" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="I8i-qTSy3NzaDd4TFS07-4" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/woothemes/PNG/intruder.png" vertex="1" parent="1">
+          <mxGeometry x="305" y="255" width="58" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="I8i-qTSy3NzaDd4TFS07-5" value="Attacker Spoofing DNS server" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="288" y="348" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I8i-qTSy3NzaDd4TFS07-7" value="" style="endArrow=classicThin;html=1;rounded=1;endFill=1;strokeWidth=5;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fillColor=#e3c800;strokeColor=#B09500;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="400" as="sourcePoint" />
+            <mxPoint x="270" y="326" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I8i-qTSy3NzaDd4TFS07-8" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/domain_controller.svg;" vertex="1" parent="1">
+          <mxGeometry x="570" y="237.57" width="65" height="92.86" as="geometry" />
+        </mxCell>
+        <mxCell id="I8i-qTSy3NzaDd4TFS07-10" value="" style="endArrow=classicThin;html=1;rounded=1;endFill=1;strokeWidth=5;fillColor=#60a917;strokeColor=#2D7600;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="280" as="sourcePoint" />
+            <mxPoint x="540" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I8i-qTSy3NzaDd4TFS07-11" value="Domain Controller" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#ff7300;" vertex="1" parent="1">
+          <mxGeometry x="540" y="340" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I8i-qTSy3NzaDd4TFS07-12" value="Authentication&lt;br&gt;using LDAP or SMB" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;fontColor=#0084ff;" vertex="1" parent="1">
+          <mxGeometry x="410" y="250" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I8i-qTSy3NzaDd4TFS07-13" value="1. If user uses the login credentials anywhere, it will be stored in the form of NTLM hashes which is called as LDAP Relay.&lt;br style=&quot;font-size: 12px;&quot;&gt;2. With those credentials we create a account into the DC and this will be done by the tool named MiTM6.&lt;br style=&quot;font-size: 12px;&quot;&gt;3. This tool will do all the above process and relay on the LDAP at the DC." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=0;fontColor=#000000;spacing=2;spacingTop=0;spacingBottom=0;spacingLeft=0;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="50" y="585" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="I8i-qTSy3NzaDd4TFS07-17" value="MiTM6" style="sketch=0;points=[[0.015,0.015,0],[0.985,0.015,0],[0.985,0.985,0],[0.015,0.985,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.rect;prIcon=next_generation_intrusion_prevention_system;fillColor=#FAFAFA;strokeColor=#005073;fontFamily=Georgia;fontStyle=1;fontSize=14;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="440" y="400" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="I8i-qTSy3NzaDd4TFS07-18" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#06d083;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="405" y="390" width="120" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
